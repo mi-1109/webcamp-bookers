@@ -1,4 +1,8 @@
 class HomesController < ApplicationController
+  
+  def collection
+  end
+  
   def index
   end
 
