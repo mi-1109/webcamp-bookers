@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  
+
   resources :homes
-  
-  #アプリケーションの"/"ルートにアクセスしたおき、homesコントローラのindexアクションが呼ばれる
-  root "homes#index"
+
+  get 'collection' => 'homes#collection'
+  #アプリケーションの"/"ルートにアクセスしたとき、homesコントローラのcollectionアクションが呼ばれる
+  root "homes#collection"
 end
