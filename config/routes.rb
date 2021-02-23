@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get 'collection' => 'homes#collection'
   #アプリケーションの"/"ルートにアクセスしたとき、homesコントローラのcollectionアクションが呼ばれる
   root "homes#collection"
+
+  post 'homes' => 'homes#create'
 end

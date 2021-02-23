@@ -62,3 +62,25 @@ td {
 .top-btn {
   margin-left: 15px;
 }
+
+/*ここまで、collection.html.erbのスタイル*/
+
+/*ここから、新規投稿部分のスタイル*/
+.new-form {
+  display: block;
+}
+
+.newbook-header {
+  margin-bottom: 10px;
+}
+
+.new-title {
+  margin-bottom: 10px;
+}
+
+.new-body {
+  margin-bottom: 10px;
+}
+/*ここまで、新規投稿部分のスタイル*/
+
+
