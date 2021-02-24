@@ -1,4 +1,4 @@
-class HomesController < ApplicationController
+class BooksController < ApplicationController
 
   def collection
   end
@@ -13,7 +13,7 @@ class HomesController < ApplicationController
   def create
     book = Book.new(book_params)
     book.save
-    redirect_to homes_path
+    redirect_to books_path
   end
 
   def edit
