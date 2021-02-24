@@ -84,3 +84,13 @@ td {
 /*ここまで、新規投稿部分のスタイル*/
 
 
+/*ここから、詳細画面のスタイル*/
+.show {
+  font-size: 14px;
+}
+
+.show-item {
+  margin-bottom: 20px;
+  margin-left: 26px;
+}
+/*ここまで、詳細画面のスタイル*/

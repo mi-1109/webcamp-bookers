@@ -1,2 +1,8 @@
-<h1>Homes#show</h1>
-<p>Find me in app/views/homes/show.html.erb</p>
+<div class="show">
+
+<p class="show-item"><strong>Title: </strong><%= @book.title %></p>
+<p class="show-item"><strong>Body: </strong><%= @book.body %></p>
+
+<p><%= link_to "Edit", collection_path %> | <%= link_to "Back", books_path %></p>
+
+</div>
