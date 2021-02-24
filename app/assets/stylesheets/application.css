@@ -93,6 +93,7 @@ td {
   margin-bottom: 20px;
   margin-left: 26px;
 }
+<<<<<<< HEAD
 /*ここまで、詳細画面のスタイル*/
 
 /*ここから、編集画面のスタイル*/
@@ -107,3 +108,6 @@ td {
 .edit-body {
   margin-bottom: 10px;
 }
+=======
+/*ここまで、詳細画面のスタイル*/
+>>>>>>> 6c071705bd93929294d5ec6d0954da44b0fbebed
