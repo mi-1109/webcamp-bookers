@@ -45,13 +45,19 @@
     </div>
   <% end %>
 
-  <h4 class="new-title">Title</h4>
-  <%= f.text_field :title %>
+  <div class="field">
+    <h4 class="new-title">Title</h4>
+    <%= f.text_field :title %>
+  </div>
 
-  <h4 class="new-body">Body</h4>
-  <%= f.text_area :body %>
+ <div class="field">
+    <h4 class="new-body">Body</h4>
+    <%= f.text_area :body %>
+ </div>
 
-  <%= f.submit 'Create Book' %>
+  <div class="submit">
+    <%= f.submit 'Create Book' %>
+  </div>
 
 <% end %>
 </div>

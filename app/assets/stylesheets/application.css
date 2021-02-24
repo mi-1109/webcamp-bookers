@@ -30,7 +30,6 @@ body {
 
 
 /*ここから、index.html.erbのスタイル*/
-
 table {
   margin: 20px 0;
 }
@@ -47,6 +46,7 @@ td {
 }
 
 /*ここまで、index.html.erbのスタイル*/
+
 
 /*ここから、collection.html.erbのスタイル*/
 .top-title {
@@ -65,26 +65,36 @@ td {
 
 /*ここまで、collection.html.erbのスタイル*/
 
+
 /*ここから、新規投稿部分のスタイル*/
-.new-form {
-  display: block;
-}
 
-.newbook-header {
-  margin-bottom: 10px;
-}
-
-.new-title {
+.new-header {
   margin-bottom: 10px;
 }
 
 .new-body {
-  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.submit {
+  display: block;
+}
+
+input[type="submit" i] {
+  margin-top: 10px;
+  padding: 1px 5px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  border: 1px solid #808080;
+}
+
+input[type="text" i] {
+  border: 1px solid #808080;
 }
 /*ここまで、新規投稿部分のスタイル*/
 
 
-/*ここから、詳細画面のスタイル*/
+/*ここから、show.html.erbのスタイル*/
 .show {
   font-size: 14px;
 }
@@ -93,24 +103,57 @@ td {
   margin-bottom: 20px;
   margin-left: 26px;
 }
-/*ここまで、詳細画面のスタイル*/
+/*ここまで、show.html.erbのスタイル*/
 
-/*ここから、編集画面のスタイル*/
+
+/*ここから、edit.html.erbのスタイル*/
 .edit-header {
   margin-bottom: 15px;
 }
 
-.edit-title {
-  margin-bottom: 10px;
-}
 
 .edit-body {
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
-/*ここまで、編集画面のスタイル*/
+
+.edit-nav {
+  margin-top: 10px;
+}
+/*ここまで、edit.html.erbのスタイル*/
+
 
 .notice {
   margin-bottom: 18px;
   margin-left: 14px;
   color: #008000;
 }
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid #ff0000;
+  padding: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: f5f5f5;
+}
+
+#error_explanation h2 {
+  color: #ffffff;
+  background-color: #ff0000;
+  margin-bottom: 0;
+  padding: 3px 5px;
+  font-size: 12px;
+  text-align: left;
+  text-weight: bold;
+}
+
+#error_explanation ul {
+  margin: 30px;
+}
+
+.field_with_errors {
+  display: table;
+  background-color: #ff0000;
+  padding: 2px;
+}
+

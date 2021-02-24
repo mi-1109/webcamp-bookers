@@ -16,11 +16,13 @@
   <% end %>
   <!--END 空白時のエラーメッセージ-->
 
-  <h4 class=>Title</h4>
+  <h4>Title</h4>
   <%= f.text_field :title %>
-  <h4>Body</h4>
+  <h4 class="edit-body">Body</h4>
   <%= f.text_area :body %>
-  <%= f.submit 'Update Book' %>
+  <div class="submit">
+    <%= f.submit 'Update Book' %>
+  </div>
 <% end %>
 
-<p><%= link_to "Show", book_path(@book.id) %> | <%= link_to "Back", books_path %></p>
+<p class="edit-nav"><%= link_to "Show", book_path(@book.id) %> | <%= link_to "Back", books_path %></p>
