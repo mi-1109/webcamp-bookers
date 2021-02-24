@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   root "books#collection"
 
   post 'books' => 'books#create'
+
+  patch 'books/:id/edit' => 'books#update', as: 'update_book'
 end

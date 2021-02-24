@@ -94,3 +94,16 @@ td {
   margin-left: 26px;
 }
 /*ここまで、詳細画面のスタイル*/
+
+/*ここから、編集画面のスタイル*/
+.edit-header {
+  margin-bottom: 15px;
+}
+
+.edit-title {
+  margin-bottom: 10px;
+}
+
+.edit-body {
+  margin-bottom: 10px;
+}
