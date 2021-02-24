@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  resources :homes
+  resources :books
 
-  get 'collection' => 'homes#collection'
+  get 'collection' => 'books#collection'
   #アプリケーションの"/"ルートにアクセスしたとき、homesコントローラのcollectionアクションが呼ばれる
-  root "homes#collection"
+  root "books#collection"
 
-  post 'homes' => 'homes#create'
+  post 'books' => 'books#create'
 end
