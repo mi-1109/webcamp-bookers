@@ -9,29 +9,31 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>入門Git</td>
-        <td>より良いコードを書くためのシンプルで実践的なテクニック</td>
-        <td><a href="">Show</a></td>
-        <td><a href="">Edit</a></td>
-        <td><a href="">Destroy</a></td>
-      </tr>
+      <% @books.each do |book| %>
+        <tr class="index-row">
+          <td class="book-title"><%= book.title %></td>
+          <td class="book-body"><%= book.body %></td>
+          <td><%= link_to "Show", collection_path %></td>
+          <td><%= link_to "Edit", collection_path %></td>
+          <td><%= link_to "Destroy", collection_path %></td>
+        </tr>
+      <% end %>
 
-      <tr>
-        <td>トラブル知らずのシステム設計</td>
-        <td>システム設計の要点を図解で説明してくれます</td>
-        <td><a href="">Show</a></td>
-        <td><a href="">Edit</a></td>
-        <td><a href="">Destroy</a></td>
-      </tr>
+      <!--<tr>-->
+      <!--  <td>トラブル知らずのシステム設計</td>-->
+      <!--  <td>システム設計の要点を図解で説明してくれます</td>-->
+      <!--  <td><a href="">Show</a></td>-->
+      <!--  <td><a href="">Edit</a></td>-->
+      <!--  <td><a href="">Destroy</a></td>-->
+      <!--</tr>-->
 
-      <tr>
-        <td>たのしいRuby</td>
-        <td>Rubyの入門におすすめです</td>
-        <td><a href="">Show</a></td>
-        <td><a href="">Edit</a></td>
-        <td><a href="">Destroy</a></td>
-      </tr>
+      <!--<tr>-->
+      <!--  <td>たのしいRuby</td>-->
+      <!--  <td>Rubyの入門におすすめです</td>-->
+      <!--  <td><a href="">Show</a></td>-->
+      <!--  <td><a href="">Edit</a></td>-->
+      <!--  <td><a href="">Destroy</a></td>-->
+      <!--</tr>-->
     </tbody>
   </table>
 
