@@ -109,3 +109,8 @@ td {
 }
 /*ここまで、編集画面のスタイル*/
 
+.notice {
+  margin-bottom: 18px;
+  margin-left: 14px;
+  color: #008000;
+}
